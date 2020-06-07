@@ -15,6 +15,11 @@
         <artifactId>spring-core</artifactId>
         <version>5.2.6.RELEASE</version>
     </dependency>
+    <dependency>
+        <groupId>org.apache.activemq</groupId>
+        <artifactId>activemq-all</artifactId>
+        <version>5.14.0</version>
+    </dependency>
 
 
 </dependencies>
