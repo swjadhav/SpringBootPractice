@@ -6,9 +6,25 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<!--define bean here-->
+<bean id="myfortuneService"
+	  class="com.luv2code.springdemo.FortuneSericeImp"></bean>
+	<!--Here we are inserting dependency-->
 <bean id="myCoach"
-	  class="com.luv2code.springdemo.TrackCoach"></bean>
-<bean id="myCoach2"
-	  class="com.luv2code.springdemo.BaseballCoach"></bean>
+	  class="com.luv2code.springdemo.BaseballCoach">
 
+	<!--Here we setting constructor injection
+<constructor-arg ref="fortuneService"></constructor-arg>
+	-->
+	
+	<property name="fortuneService" ref="myfortuneService"></property>
+	
+	
+	
+</bean>
+	
+
+	
+	
+	
 </beans>
